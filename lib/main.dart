@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_random_user_login/ui/drawer_widget.dart';
 import 'package:flutter_random_user_login/ui/user_widget.dart';
 
 void main() => runApp(MyApp());
@@ -32,6 +33,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: DrawerWidget(),
+      appBar: AppBar(),
       body: Container(
         child: UserWidget(),
         decoration: BoxDecoration(

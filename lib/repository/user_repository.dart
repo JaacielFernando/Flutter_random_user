@@ -4,7 +4,7 @@ import 'package:flutter_random_user_login/repository/user_api_provider.dart';
 class UserRepository{
   UserApiProvider _apiProvider = UserApiProvider();
 
-  Future<UserResponse> getUser(){
-    return _apiProvider.getUser();
+  Future<UserResponse> getUser(){ //nuevo metodo
+    return _apiProvider.getUuser(); //metodo de provider 
   }
 }
